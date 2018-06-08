@@ -32,6 +32,7 @@ html, body {
 }
 
 .errorMsg,
+.winMsg,
 .loseMsg {
   display:none;
 }
@@ -101,6 +102,7 @@ html, body {
 
 /* Modal End */
 
+/* Hangman board start */
 .hangmanBoard {
   width:400px;
   height:400px;
@@ -175,23 +177,21 @@ html, body {
 .gallows .leftArm {
   position: absolute;
   width: 8px;
-  height:50px;
+  height:40px;
   background: black;
   top:100px;
   left:50%;
-  transform: translate(-25px) rotate(45deg) ;
-  /* transform: translateX(-50px); */
+  transform: translate(-15px) rotate(45deg) ;
 }
 
 .gallows .rightArm {
   position: absolute;
   width: 8px;
-  height:50px;
+  height:40px;
   background: black;
   top:100px;
   left:50%;
-  transform: translate(17px) rotate(-45deg) ;
-  /* transform: translateX(-50px); */
+  transform: translate(7px) rotate(-45deg) ;
 }
 
 .gallows .rightLeg {
@@ -201,7 +201,7 @@ html, body {
   background: black;
   top:100px;
   left:50%;
-  transform: translate(15px,59px) rotate(-45deg);
+  transform: translate(10px,59px) rotate(-30deg);
 }
 .gallows .leftLeg {
   position: absolute;
@@ -210,5 +210,5 @@ html, body {
   background: black;
   top:100px;
   left:50%;
-  transform: translate(-20px,59px) rotate(45deg);
+  transform: translate(-17px,59px) rotate(30deg);
 }
